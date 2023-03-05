@@ -1,0 +1,21 @@
+{
+  "name": "wakaba",
+  "version": "0.1.0",
+  "description": "A programming language for beginners!",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "wakaba": "node ./dist/index.js",
+    "dev": "npm run build & npm run wakaba"
+  },
+  "author": "avaice",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

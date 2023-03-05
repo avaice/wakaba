@@ -1,0 +1,25 @@
+{
+  "main": {
+    "var": ["name"],
+    "commands": [
+      { "command": "assign", "arg": { "command": "callFunction", "arg": "fn.askName()" } },
+      { "command": "concat", "arg": [{ "command": "getVar", "arg": "name" }, "さんこんにちは！"] },
+      { "command": "exit", "arg": [] }
+    ],
+    "functions": {}
+  },
+  "fn": {
+    "var": [],
+    "commands": [],
+    "functions": {
+      "askName": {
+        "var": [],
+        "args": [],
+        "commands": [
+          { "command": "message", "arg": "こんにちは！あなたの名前は？" },
+          { "command": "return", "arg": { "command": "callFunction", "arg": "Input()" } }
+        ]
+      }
+    }
+  }
+}

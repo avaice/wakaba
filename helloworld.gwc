@@ -1,0 +1,12 @@
+[main]{
+    var name
+    name = fn.askName()
+    name & "さんこんにちは！"
+}
+
+[fn]{
+    askName(){
+        "こんにちは！あなたの名前は？"
+        return Input()
+    }
+}
